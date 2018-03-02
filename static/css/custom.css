@@ -1,0 +1,124 @@
+@media screen and (min-width: 800px) {
+
+    .width-25 {
+        width: 25% !important;
+    }
+
+    .width-33 {
+        width: 33% !important;
+    }
+
+}
+
+.lectures-wrapper {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.popup .popup-text {
+    font-size: 21px;
+}
+
+.primary-btn {
+    line-height: 70px;
+    font-family: 'proxima-nova';
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ef4035;
+    background: #ffffff;
+    -webkit-transition: all .2s ease-out 0;
+    -moz-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0;
+    transition: all .2s ease-out 0;
+    padding: 0 60px;
+    text-decoration: none;
+    outline: 1px solid #ef4035;
+    padding: 20px 40px;
+}
+
+.confirm:hover {
+    background: #ef4035;
+    color: #ffffff
+}
+
+
+.noscroll {
+    overflow: hidden;
+}
+
+.tt-wrap li {
+    font-size: 1.5vh;
+}
+
+
+.events-font-size{
+    font-size: 25px;
+}
+
+.md-modal {
+    position: fixed;
+    top : 0;
+    left: 0;
+    animation: zoomIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+
+
+@keyframes zoomIn {
+    0% {
+        overflow: hidden;
+        transform: scale(0);
+    }
+    100% {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transform: scale(1);
+    }
+}
+
+
+
+.tt-inner {
+    background:url('https://content.screencast.com/users/manishsahani/folders/Default/media/fe7b90c4-eb1c-4efe-b55a-fbf233cb2125/hexagon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tt-style ul {
+    list-style: none;
+}
+.tt-wrap li.tt-li-time {
+    color: #bbbbbb;
+    font-family: 'futura-pt';
+    font-size: 12px;
+    text-align: center;
+    padding-right: 50px;
+    text-transform: capitalize;
+
+
+
+}
+li.tt-li-para {
+    color: white;
+    text-align: center;
+    font-family: 'futura-pt';
+    padding-right: 50px;
+    padding-bottom: 9px;
+    font-size: 14px;
+}
+h4.day-t{
+    padding: 10px;
+    font-family: 'futura-pt';
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.legacy-para {
+    padding-bottom: 2px;
+}
