@@ -122,3 +122,24 @@ h4.day-t{
 .legacy-para {
     padding-bottom: 2px;
 }
+
+.lectures-wrapper .one-row .lecture-box .title a {
+    color: black;
+}
+
+.lectures-wrapper .one-row .lecture-box:hover .title a {
+    color: white;
+}
+
+
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
