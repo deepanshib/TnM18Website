@@ -164,8 +164,8 @@
         <div class="one-row">
             <div class="lecture-box 13">
                  
-                    <span class="title tech" style="font-size:25px; cursor: pointer;">
-                        <a href="#" data-scrool-to="on" data-scroll-to-target=".tech-wrapper" >Technical Events</a>
+                    <span class="title technical" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target="#technical" >Technical Events</a>
                         
                     </span>        
                 
@@ -174,15 +174,15 @@
             
             <div class="lecture-box 13">
                 
-                    <span class="title non-tech" style="font-size:25px; cursor: pointer;">
-                        <a href="#" data-scrool-to="on" data-scroll-to-target=".non-tech-wrapper" >Non Technical Events</a>
+                    <span class="title non-technical" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target="#non-technical" >Non Technical Events</a>
                     </span>
                 
             </div>
             <div class="lecture-box 13">
                 
-                    <span class="title cult" style="font-size:25px; cursor: pointer;">
-                        <a href="#" data-scrool-to="on" data-scroll-to-target=".cult-wrapper">Cultural Events</a>
+                    <span class="title cultural" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target="#cultural">Cultural Events</a>
                     </span>
                 
             </div>
@@ -511,8 +511,22 @@
             <h2 class="title has-line">Events Registration</h2>
             <!-- <span class="note"></span> -->
             
-            <div class="tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Technical Events</h6></div>
-            <div class="row">
+            <div class="row event_heading">
+                <div class="col-md-12">
+                    <div class="lectures-box  width-33 technical" id="technical">
+                        <span class="lecture-title"> Technical Events </span>
+                    </div>
+                    <div class="lectures-box  width-33 non-technical" id="non-technical">
+                        <span class="lecture-title"> Non Technical Events </span>
+                    </div>
+                    <div class="lectures-box  width-33 cultural" id="cultural">
+                        <span class="lecture-title"> Cultural Events </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Technical Events</h6></div> -->
+            <div class="row tech_events showing">
                 <div class="col-md-12">
                     <div class="lectures-box width-25 md-trigger" data-box="devsprint" data-modal="modal-7">
 				  
@@ -577,10 +591,10 @@
                     </div>
                 </div>
             </div>
-            <br><br><br>
+            <!-- <br><br><br> -->
 
-            <div class="non-tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Non Technical Events</h6></div>
-            <div class="row">
+            <!-- <div class="non-tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Non Technical Events</h6></div> -->
+            <div class="row nontech_events showing">
                 <div class="col-md-12">
                     <div class="lectures-box width-25 md-trigger" data-box="tresurehunt" data-modal="modal-19">
                         <span class="lecture-title"> Treasure Hunt </span>
@@ -653,10 +667,10 @@
                     </div>
                 </div>
             </div>
-            <br><br><br>
+            <<!-- br><br><br -->>
 
-            <div class="cult-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Cultural Events</h6></div>
-            <div class="row">
+            <!-- <div class="cult-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Cultural Events</h6></div> -->
+            <div class="row cult_events showing">
                 <div class="col-md-12">
                     <div class="lectures-box width-25 md-trigger" data-box="footloose" data-modal="modal-33">
                   
