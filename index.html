@@ -61,6 +61,9 @@
 
     <link rel="apple-touch-icon-precomposed" href="static/img/apple-touch-icon-precomposed.png"/>
     <script type="text/javascript">dataLayer = [{'author': 'Degordian'}];</script>
+    <script src="static/js/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> -->
+    <script src="static/js/fullclip.js"></script>
 </head>
 <body class=" home">
 
@@ -72,7 +75,7 @@
 <div class="overlay"></div>
 <div class="lectures-wrapper" id="lectures-wrapper">
     <a href="#lectures-wrapper" class="close-lectures"><i></i></a>
-    <div class="inner">
+    <!-- <div class="inner">
         <div class="one-row">
             <div class="lecture-box l3">
                 <div class="box-inner">
@@ -107,8 +110,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="inner">
+    </div> -->
+    <!-- <div class="inner">
         <div class="one-row">
             <div class="lecture-box l4">
                 <div class="box-inner">
@@ -155,7 +158,41 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="inner">
+        <div class="one-row">
+            <div class="lecture-box 13">
+                 
+                    <span class="title tech" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target=".tech-wrapper" >Technical Events</a>
+                        
+                    </span>        
+                
+
+            </div>
+            
+            <div class="lecture-box 13">
+                
+                    <span class="title non-tech" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target=".non-tech-wrapper" >Non Technical Events</a>
+                    </span>
+                
+            </div>
+            <div class="lecture-box 13">
+                
+                    <span class="title cult" style="font-size:25px; cursor: pointer;">
+                        <a href="#" data-scrool-to="on" data-scroll-to-target=".cult-wrapper">Cultural Events</a>
+                    </span>
+                
+            </div>
+            
+
+        </div>
     </div>
+    
+
+
     <a class="view-link" href="#" data-scrool-to="on" data-scroll-to-target=".timetable-wrapper">
         <div class="link-outer">
             <div class="link-inner">
@@ -254,6 +291,7 @@
 <section id="content" class="wrapper-content l-master-b">
     <div class="front-container home">
         <div class="front-bg home-front-bg"></div>
+        <div class="fullBackground"></div>
         <div class="front-overlay-message-wrap">
             <div class="front-overlay-message-container">
                 <div class="front-overlay-message-content">
@@ -472,11 +510,13 @@
                 </span>
             <h2 class="title has-line">Events Registration</h2>
             <!-- <span class="note"></span> -->
+            
+            <div class="tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Technical Events</h6></div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="lectures-box width-25 md-trigger" data-box="devsprint" data-modal="modal-7">
 				  
-                        <span class="lecture-title"> Robo wars <span>
+                        <span class="lecture-title"> Robo wars </span>
                         <span class="lecture-link">Vew event details<span> +</span></span>
                     </div>
                     <div class="lectures-box width-25 md-trigger" data-box="techparaxisiosandroid" data-modal="modal-8">
@@ -533,6 +573,149 @@
 					  <div class="lectures-box width-25  md-trigger" data-box="techpaperppt" data-modal="modal-18">
 
                         <span class="lecture-title"> Tech Paper presentation</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="non-tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Non Technical Events</h6></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="lectures-box width-25 md-trigger" data-box="tresurehunt" data-modal="modal-19">
+                        <span class="lecture-title"> Treasure Hunt </span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="ultfood" data-modal="modal-20">
+
+                        <span class="lecture-title"> Ultimate Foodie</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="besherlock" data-modal="modal-21">
+
+                        <span class="lecture-title">Be a Sherlock</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="photobooth" data-modal="modal-22">
+
+                        <span class="lecture-title">Photo Booth</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="casestudy" data-modal="modal-23">
+
+                        <span class="lecture-title">Case Study</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="roadies" data-modal="modal-24">
+
+                        <span class="lecture-title">Roadies</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="directorcut" data-modal="modal-25">
+
+                        <span class="lecture-title">Director's Cut</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="tabletennis" data-modal="modal-26">
+
+                        <span class="lecture-title">Table Tennis</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="dodgeball" data-modal="modal-27">
+
+                        <span class="lecture-title">Dodgeball</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="basketball" data-modal="modal-28">
+
+                        <span class="lecture-title">Basketball</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="football" data-modal="modal-29">
+
+                        <span class="lecture-title">Football</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="cricket" data-modal="modal-30">
+
+                        <span class="lecture-title">Cricket</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="karaoke" data-modal="modal-31">
+
+                        <span class="lecture-title">TnM Karaoke</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="rangbarse" data-modal="modal-32">
+
+                        <span class="lecture-title">Rang Barse (Rangoli Event)</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="cult-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Cultural Events</h6></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="lectures-box width-25 md-trigger" data-box="footloose" data-modal="modal-33">
+                  
+                        <span class="lecture-title"> Footloose </span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="fashionparade" data-modal="modal-34">
+
+                        <span class="lecture-title"> Fashion Parade</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="mrmsmridang" data-modal="modal-35">
+
+                        <span class="lecture-title">Mr. And Miss Mridang ’18</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="desibeats" data-modal="modal-36">
+
+                        <span class="lecture-title">Desi Beats</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="impulse" data-modal="modal-37">
+
+                        <span class="lecture-title">Impulse </span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="voicemridang" data-modal="modal-38">
+
+                        <span class="lecture-title">Voice of Mridang'18</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="armageddon" data-modal="modal-39">
+
+                        <span class="lecture-title">Armageddon</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="runthrough" data-modal="modal-40">
+
+                        <span class="lecture-title">Run through 2017</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="mummery" data-modal="modal-41">
+
+                        <span class="lecture-title">Mummery</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="houteculture" data-modal="modal-42">
+
+                        <span class="lecture-title">Houte couture</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="thirak" data-modal="modal-43">
+
+                        <span class="lecture-title">Thirak</span>
+                        <span class="lecture-link">Vew event details<span> +</span></span>
+                    </div>
+                    <div class="lectures-box width-25 md-trigger" data-box="crescendo" data-modal="modal-44">
+
+                        <span class="lecture-title">Crescendo</span>
                         <span class="lecture-link">Vew event details<span> +</span></span>
                     </div>
                 </div>
@@ -1744,6 +1927,1540 @@
         </div>
     </div>
 
+    <div class="popup md-modal md-effect-12" id="modal-19" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-20" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-21" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-22" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-23" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-24" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-25" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-26" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-27" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-28" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-29" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-30" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-31" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-32" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-33" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-34" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-35" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-36" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-37" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-38" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-39" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-40" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-41" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-42" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-43" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup md-modal md-effect-12" id="modal-44" data-title="techpaperppt"
+         data-vurl="dev-sprint">
+        <div class="md-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="js-close md-close" data-modal-close="on" href="#">
+                            <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
+                        </a>
+                        <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <ul class="date">
+                            Date: March 24th, 2018
+                        </ul>
+                        <ul class="date">
+                            Time : 6PM
+                        </ul>
+                        <ul class="date" style="font-size:20px">
+                            Venue: Maharaja Agrasen Institute of Technology
+                        </ul>
+                        <span class="popup-subtitle">
+                            An open source project will be allotted to participants and they will be required to develop the most amazing features in the least possible time.The participant with the most pull requests (must be meaningful, proper guidelines will be provided at the time of competition)will win it all.
+                            We, at MAIT aim to make coding accessible to all and actively implement ways to integrate the female demographic; which as of now is extremely under - represented in the tech industry.We also envision a future where we can bring people from different cultures and different walks of life, together on a single platform, where they can contribute without the stigma of being under- represented.
+                            To effectuate our aspirations, we are pleased to announce that special preference shall be given to an all female participants team and they shall receive remarkable gifts if they manage to win the competition.
+                        </span>
+                        <div>
+
+                        </div>
+                        <span class="popup-text">
+                           RULES
+                            <ul>
+                                <li>Selection will be done on the basis of the registration form submitted. All girl teams would be given a preference during selection.</li>
+                                <li>The decision of organizers is final for selecting the teams for the event.</li>
+                                <li>You must be at allotted location in MAIT to work on a project for submission.</li>
+                                <li>You cannot work on your project before the event begins.</li>
+                                <li>You cannot steal another team's source code.</li>
+                                <li>You cannot discuss strategy, suggestions or tips with other teams.</li>
+                                <li>There will be an evaluation round after every 6 hours.</li>
+                                <li>After every evaluation round, scores will be awarded to respective teams.</li>
+                                <li>Top 10 teams will be selected for pitching in the final round. All girl teams would have separate shortlisting for this round.</li>
+                                <li>The decision of judges is final for determining prizes and awards.</li>
+                                <li>Teams must stop hacking once the time is up.</li>
+                                <li>By submitting an Entry or accepting any prize, you represent and warrant the following: you will not submit content that is copyrighted, protected by trade secret or otherwise subject to third party intellectual property rights or other proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from their rightful owner to post the content.</li>
+                                <li>Please comply with all instructions from DevSprint organizers.</li>
+                                <li>Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, or other unsporting behaviour.</li>
+
+                            </ul>
+                                                            
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="confirm" target="_blank"  href="https://goo.gl/forms/BNGXr4kzjOzjfgDo1">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <button class="md-trigger hidden" data-modal="modal-thank"></button>
     <div class="popup md-modal md-effect-12" id="modal-thank">
@@ -1793,10 +3510,13 @@
 
 </section>
 
-<script src="static/js/jquery.min.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWMabQkh7geMLqVmlrxRCqYwP4wAPQ46A"></script>
 <script src="static/js/vendor/plugins.js"></script>
+
+
 <script src="static/js/main7e0f.js?dbust=1414061398"></script>
+
 <script src="static/js/custom.js"></script>
 
 </body>

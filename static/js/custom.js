@@ -14,5 +14,19 @@ $(document).ready(function () {
         return false;
     });
 
+    //Background images-
+
+    var images_bg = [
+        'static/img/placeholder-fullscreen.png',
+        'static/img/image-placeholder.jpg',
+        'static/img/top_bg.jpg',
+    ]
+
+    $('.fullBackground').fullClip({
+        images: images_bg,
+        transitionTime: 2000,
+        wait: 5000
+    });
+
 });
 

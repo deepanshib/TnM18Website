@@ -7461,7 +7461,7 @@ body {
 }
 
 .front-container .front-bg.home-front-bg {
-    background-image: url('../img/top_bg.jpg')
+    /*background-image: url('../img/top_bg.jpg')*/
 }
 
 .front-container.home .date {
