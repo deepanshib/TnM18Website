@@ -79,13 +79,57 @@
     }
 }
 
+.inner_tt {
+    text-align: center;
+    color: #fff;
 
+}
+ 
+.timetable_wrap .link-outer {
+    background: #fff;
+}
+.timetable_wrap .link-outer:hover {
+    background: #ef4035;
+    color: white;
+}
+
+.timetable-wrapper a:hover {
+    text-decoration: none;
+}
+
+.time_wrap {
+    width: 200px;
+    float: left;
+    font-size: 20px;
+    color: #FFB755;
+}
+
+.name_wrap {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.inner_tt hr {
+    border: 1px solid #ef4035;
+    /*width: 75%;*/
+    margin-top: : 20px;
+    margin-bottom: 20px;
+}
+
+.inner_tt .title h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
 
 .tt-inner {
-    background:url('https://content.screencast.com/users/manishsahani/folders/Default/media/fe7b90c4-eb1c-4efe-b55a-fbf233cb2125/hexagon.png');
+    cursor: pointer;
+    background:url('../img/bg-tt.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .tt-style ul {
@@ -181,3 +225,6 @@ h4.day-t{
     display: none;
 }
 
+.footer{
+    text-align: center;
+}

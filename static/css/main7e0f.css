@@ -7514,15 +7514,16 @@ body {
     margin-top: 10px;
     position: relative;
     padding-right: 40%
+    text-align:center;
 }
 
 .front-container.home .home-subtitle:before {
     position: absolute;
     content: "";
     width: 110px;
-    left: 15px;
+    /*left: 15px;*/
     background: #4c4c50;
-    height: 1px;
+    height: 0px;
     top: 0px
 }
 
@@ -7530,6 +7531,8 @@ body {
     padding-top: 50px;
     text-align: right
 }
+
+
 
 .call-upcomes-lectures {
     font-weight: bold;
@@ -7685,7 +7688,7 @@ body {
 
 .title-wrapper .title {
     font-family: 'Merriweather';
-    font-size: 33px;
+    font-size: 30px;
     line-height: 1.3em;
     color: #474747;
     text-align: center;
@@ -7977,8 +7980,8 @@ body {
     font-weight: 300;
     font-size: 21px;
     line-height: 1.8em;
-    text-align: left;
-    padding-right: 20%;
+    text-align: center;
+    /*padding-right: 20%;*/
     padding-bottom: 20px;
     color: #7c7c7c
 }
@@ -7991,8 +7994,8 @@ body {
     font-size: 17px;
     line-height: 1.8em;
     color: #797979;
-    text-align: left;
-    padding-right: 20%;
+    text-align: center;
+    /*padding-right: 20%;*/
     padding-bottom: 110px
 }
 
@@ -9145,14 +9148,14 @@ footer, .footer {
     position: relative
 }
 
-footer .footer-logo, .footer .footer-logo {
+/*footer .footer-logo, .footer .footer-logo {
     width: 143px;
     height: 50px;
-    background: url("../img/Synergy_Logo2.png") no-repeat 0 0;
+    background: url("../img/maitLogo.png") no-repeat 0 0;
     float: left;
     margin-left: 90px;
     position: relative
-}
+}*/
 
 footer .social, .footer .social {
     float: right;
@@ -9317,6 +9320,8 @@ footer:after, .footer:after {
         padding: 100px 0
     }
 }
+
+
 
 .lectures-wrapper {
     display: block;
