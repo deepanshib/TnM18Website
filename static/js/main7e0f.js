@@ -397,6 +397,37 @@ var main = (function ($) {
                     ease: DAnimation.bezier(0.14, 0.46, 0, 0.95)
                 });
             });
+            $('.call-up-lectures').click(function (e) {
+                e.preventDefault();
+                tmVirtualPage('/upcoming-lectures/', 'Upcoming lectures');
+                document.title = 'Lectures | Degordian Academy';
+                if (comFunct.isDesktop()) {
+                    leftPos = '0px';
+                } else if (comFunct.isMobileDevice() && comFunct.getViewport('width') > 767 && comFunct.getViewport('width') < 1025) {
+                    leftPos = '0px';
+                } else {
+                    leftPos = '0px';
+                }
+                if ($(this).hasClass('gray')) {
+                    animdelay = 0.6;
+                }
+                else {
+                    animdelay = 0;
+                }
+                var scroolToAnchor = $(this).data('scroll-to-target');
+                TweenLite.to($("html, body"), 0.5, {
+                    scrollTop: $(scroolToAnchor).offset().top,
+                    ease: Power2.easeIn,
+                    onComplete: function () {
+                        $('.overlay').addClass('show');
+                    }
+                });
+                TweenLite.to($(this).attr('href'), 0.5, {
+                    css: {left: leftPos},
+                    delay: 0.5,
+                    ease: DAnimation.bezier(0.14, 0.46, 0, 0.95)
+                });
+            });
             // $('.confirm').click(function (e) {
             //     e.preventDefault();
             //     $('.overlay').removeClass('show');
