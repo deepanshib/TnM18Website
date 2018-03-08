@@ -572,78 +572,22 @@ var image;
 var mrk = [];
 var self;
 var MY_MAPTYPE_ID = 'degordian';
-var gmap = ({
-    init: function () {
-        self = this;
-        if ($('#map').length > 0) {
-            self.initialize();
-            setTimeout(self.drop, 1000);
-        }
-        infowindow = new google.maps.InfoWindow({content: 'bla bla'});
-        image = new google.maps.MarkerImage('static/img/pin@2x.png', new google.maps.Size(20, 24), new google.maps.Point(0, 0), new google.maps.Point(12, 39));
-    }, initialize: function () {
-        var featureOpts = [{featureType: "administrative", stylers: [{visibility: "off"}]}, {
-            featureType: "poi",
-            stylers: [{visibility: "simplified"}]
-        }, {featureType: "road", stylers: [{visibility: "simplified"}]}, {
-            featureType: "water",
-            stylers: [{visibility: "simplified"}]
-        }, {featureType: "transit", stylers: [{visibility: "simplified"}]}, {
-            featureType: "landscape",
-            stylers: [{visibility: "simplified"}]
-        }, {featureType: "road.highway", stylers: [{visibility: "off"}]}, {
-            featureType: "road.local",
-            stylers: [{visibility: "on"}]
-        }, {
-            featureType: "road.highway",
-            elementType: "geometry",
-            stylers: [{visibility: "on"}]
-        }, {featureType: "road.arterial", stylers: [{visibility: "off"}]}, {
-            featureType: "water",
-            stylers: [{color: "#5f94ff"}, {lightness: 26}, {gamma: 5.86}]
-        }, {}, {
-            featureType: "road.highway",
-            stylers: [{weight: 0.6}, {saturation: -85}, {lightness: 61}]
-        }, {featureType: "road"}, {}, {
-            featureType: "landscape",
-            stylers: [{hue: "#0066ff"}, {saturation: 74}, {lightness: 100}]
-        }];
-        coord = $('#map').attr('rel').split('|');
-        var myOptions = {
-            zoom: 15,
-            scrollwheel: false,
-            center: new google.maps.LatLng(coord[0], coord[1]),
-            mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]},
-        };
-        map = new google.maps.Map(document.getElementById("map"), myOptions);
-        gmap.otherOptions();
-    }, drop: function () {
-        setTimeout(function () {
-            coord = $('#map').attr('rel').split('|');
-            latLng2 = new google.maps.LatLng(coord[0], coord[1]);
-            self.addMarker();
-        });
-    }, setMapsVar: function () {
-        directionPanelWidth = 250;
-        mapWidth = 370;
-        display = "block";
-    }, addMarker: function (_latLng) {
-        markers.push(new google.maps.Marker({
-            position: latLng2,
-            map: map,
-            draggable: false,
-            icon: image,
-            animation: google.maps.Animation.DROP
-        }));
-        markers[markers.length - 1].content = content;
-        iterator++;
-    }, otherOptions: function () {
-    }
-});
-$(window).resize(function () {
-});
-gmap.init();
 
+
+function initMap() {
+        var uluru = {lat: 28.719614, lng: 77.066186};
+        var map = new google.maps.Map(document.getElementById('myMap'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+
+initMap();
 function buildUrl(url, parameters) {
     var qs = "";
     for (var key in parameters) {
@@ -660,6 +604,7 @@ function buildUrl(url, parameters) {
     }
     return url;
 }
+
 
 var socialShare = ({
     init: function (id) {
