@@ -171,10 +171,10 @@ h4.day-t{
     color: black;
 }
 
-.lectures-wrapper .one-row .lecture-box:hover .title a {
+/*.lectures-wrapper .one-row .lecture-box:hover .title a {
     color: white;
 }
-
+*/
 
 .fullBackground {
   background-position: center center;
@@ -191,7 +191,8 @@ h4.day-t{
 .form-wrapper .event_heading .lectures-box {
     width: 20%;
     float: left;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    border: 0px solid white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -210,13 +211,13 @@ h4.day-t{
     font-size: 20px;
 }
 
-.form-wrapper .event_heading .lectures-box:hover, .tech-click, .nontech-click, .cult-click {
+/*.form-wrapper .event_heading .lectures-box:hover, .tech-click, .nontech-click, .cult-click {
     background: white;
-}
+}*/
 
-.form-wrapper .event_heading .lectures-box:hover span{
+/*.form-wrapper .event_heading .lectures-box:hover span{
     color:black;
-}
+}*/
 .tech-click1, .nontech-click1, .cult-click1 {
     color:black !important;
 }
@@ -227,4 +228,198 @@ h4.day-t{
 
 .footer{
     text-align: center;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0 50px;
+  overflow-y: hidden;
+}
+footer div {
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  footer {
+    height: auto;
+  }
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+/*.dateandtime{
+  position: absolute;
+left: 50px;
+ 
+}
+.dateandtime2{
+    position: absolute;
+   
+right: 50px;
+}*/
+footer .menu-footer {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 30px auto;
+}
+footer .menu-footer li {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+footer .menu-footer li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 15px;
+}
+footer .menu-footer li a:hover {
+  color: #ef4035;
+}
+footer .menu-footer li.active a {
+  color: #AC94DD;
+  cursor: default;
+}
+@media (max-width: 1000px) {
+  footer .menu-footer {
+    /*padding: 20px 0;*/
+  }
+  footer .menu-footer li {
+    /*float: left;*/
+    /*width: 50.0%;*/
+    /*margin: 5px 0;*/
+  }
+}
+@media (max-width: 991px) {
+  footer .social {
+    /*margin: 0px 0px 20px;*/
+  }
+}
+ 
+
+footer .social a {
+  margin-right: 16px;
+  line-height: 40px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  /*background: #d2d5d8;*/
+  color: #000;
+  transition: background .5s ease;
+}
+footer .social a:hover {
+  /*background: #4a4b4c;*/
+  color: #fff;
+}
+@media (max-width: 387px) and (min-width:350px) {
+  footer .social li a {
+    margin:0 5px;
+  }
+}
+@media (max-width: 350px) {
+  footer .social li a {
+    margin:0 auto;
+  }
+}
+
+
+
+
+
+/* 16. Social links */
+footer .social {
+  list-style: none;
+  margin: 0px 0px 0 0;
+  padding: 0;
+}
+footer .social li {
+  display: inline;
+  margin-right: 0px;
+}
+footer .social a {
+  color: #AC94DD;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 25px;
+  font-size: 14px;
+  transition: color 0.5s ease;
+}
+footer .social a:hover {
+  color: #7961AA;
+}
+
+.locate-wrapper .title {
+    padding-bottom: 30px;
+}
+
+
+.locate-wrapper .subtitle {
+    position: relative;
+    display: block;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.8em;
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 20px;
+    color: #7c7c7c
+}
+
+.locate-wrapper {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#myMap {
+  height: 450px;
+  width: 100%;
+  /*position: absolute;*/
+  /*margin-top: 55px;*/
+   /*Vertical margin for form */
+   /*overflow: visible;*/
+   
+  z-index: 12;
+}
+
+.form-wrapper .lectures-box img {
+    margin-top: -50px;
+
+}
+
+.form-wrapper .lectures-box {
+   text-align: center;
+}
+
+.form-wrapper .event_heading .lectures-box {
+    background: none;
+}
+
+.form-wrapper .showing .lectures-box {
+    background: #f7f9d1;
+    /*color:black;*/
+    border: 10px solid #28282e;
+
+}
+
+.form-wrapper .showing .lectures-box .lecture-title {
+    color: #28282e;
+    font-size: 18px;
+    /*top: 0px;*/
+}
+
+.form-wrapper .showing .lectures-box:hover .lecture-link {
+    color:#ef4035;
+}
+
+.form-wrapper .showing .lectures-box:hover {
+    background: white
 }

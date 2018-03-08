@@ -552,6 +552,7 @@
             </div>
         </div>
     </div>
+    <section id="about-mait">
     <div class="views-expertise-wrapper second-new">
         <div class="container">
             <div class="row">
@@ -687,6 +688,8 @@
             </div>
         </div>
     </div>
+</section>
+<section id="events-wrap">
     <div class="form-wrapper">
         <div class="container">
                 <span class="note on-top">
@@ -698,7 +701,7 @@
             
             <div class="row event_heading">
                 <div class="col-md-12">
-                    <div class="lectures-box  width-33 technical" id="technical">
+                    <!-- <div class="lectures-box  width-33 technical" id="technical">
                         <span class="lecture-title"> Technical Events </span>
                     </div>
                     <div class="lectures-box  width-33 non-technical" id="non-technical">
@@ -706,10 +709,19 @@
                     </div>
                     <div class="lectures-box  width-33 cultural" id="cultural">
                         <span class="lecture-title"> Cultural Events </span>
+                    </div> -->
+                    <div class="lectures-box width-33 technical" id="technical">
+                        <img src="static/img/technical-button.png">
+                    </div>
+                    <div class="lectures-box width-33 non-technical" id="non-technical">
+                        <img src="static/img/non-tech-button.png">
+                    </div>
+                    <div class="lectures-box width-33 cultural" id="cultural">
+                        <img src="static/img/cultural-button.png">
                     </div>
                 </div>
             </div>
-
+            <br>
             <!-- <div class="tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Technical Events</h6></div> -->
             <div class="row tech_events showing">
                 <div class="col-md-12">
@@ -777,7 +789,7 @@
                 </div>
             </div>
             <!-- <br><br><br> -->
-
+        
             <!-- <div class="non-tech-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Non Technical Events</h6></div> -->
             <div class="row nontech_events showing">
                 <div class="col-md-12">
@@ -852,7 +864,7 @@
                     </div>
                 </div>
             </div>
-            <<!-- br><br><br -->>
+            <!-- br><br><br -->
 
             <!-- <div class="cult-wrapper"><h6 class="title has-line" style="font-size:45px;padding-bottom:15px;">Cultural Events</h6></div> -->
             <div class="row cult_events showing">
@@ -919,9 +931,9 @@
                     </div>
                 </div>
             </div>
-
+            <br>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="text-align: center;">
                     <a href="#" class="view-timetable-arrow" data-scrool-to="on"
                        data-scroll-to-target=".timetable-wrapper">
                         View timetable
@@ -938,10 +950,10 @@
         </div>
     </div>
 
+</section>
 
 
-
-
+<section id="timeline">
     <div class="timetable-wrapper">
         <div class="container">
             <div class="row">
@@ -1125,27 +1137,33 @@
             </div> -->
         </div>
     </div>
-    <div class="location-wrapper">
-        <span class="full-map" id="map" rel="28.719704|77.0639023"></span>
+</section>
+    <div class="timetable-wrapper locate-wrapper" id="location-wrap">
+        <!-- <span class="full-map" id="map" rel="28.719704|77.0639023"></span> -->
         <div class="container">
+
             <div class="row">
-                <div class="col-md-5 col-md-offset-1 left">
+                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
                     <div class="inner">
                                 <span class="note">
                                     <i class="nbr">04</i>
-                                    it´s a little highTech
+                                    So, Where is it?
                                 </span>
-                        <h2 class="title has-line">Location</h2>
-                        <span class="subtitle">All Events will be held at <strong>Maharaja Agrasen Institute of Technology</strong></span>
+                        <h2 class="title has-line" style="text-align: center;">Location</h2>
+                        <span class="subtitle" style="text-align: center;">All Events will be held at <strong>Maharaja Agrasen Institute of Technology</strong></span>
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </div>
+    <div id="myMap"></div>
+    <section id="sponsors-wrap">
         <div class="timetable-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 left">
+                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
                     <div class="inner">
                             <span class="note">
                                 <i class="nbr">05</i>
@@ -1210,10 +1228,10 @@
         </div>
     </div>    
 
-    <div class="timetable-wrapper">
+    <div class="timetable-wrapper" >
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 left">
+                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
                     <div class="inner">
                             <span class="note">
                                 <i class="nbr">05</i>
@@ -1362,6 +1380,7 @@
         </div>
 
     </div>
+</section>
     <section id="faq" class="page-section light">
         <div class="container">
             <div class="row">
@@ -1439,41 +1458,78 @@
     </section>
 
     <footer class="footer">
-        <div class="footer_row">
+        <div class="footer_row container">
             <a target="_blank" href="./index.html" style="text-align: center;"><img src="static/img/maitLogo.png" width="100px" /></a>
         </div>
-        <ul class="social">
+
+        <ul class="menu-footer hidden-ms hidden-xs">
+                     
+                     <li><a href="#" data-scroll-to-target="#about-mait" data-scrool-to="on">About </a></li>
+                     <li><a href="#" data-scroll-to-target="#events-wrap" data-scrool-to="on">Events </a></li>
+                     <li><a href="#gallery_wrapper" data-scroll-to-target=".front-container" data-scrool-to="on" class="call-up-lectures">Gallery </a></li>
+                     <li><a href="#" data-scroll-to-target="#timeline" data-scrool-to="on">Timetable </a></li>
+                     
+                     <li><a href="#" data-scroll-to-target="#location-wrap" data-scrool-to="on">Location</a></li>
+                     <li><a href="#" data-scroll-to-target="#sponsors-wrap" data-scrool-to="on">Sponsors </a></li>
+                     <li><a href="#" data-scroll-to-target="#faq" data-scrool-to="on">FAQ</a></li>
+                     <!-- <li><a href="#gallery">Contact Us! </a></li> -->
+         </ul>
+
+
+         <p></p>
+        <!-- <ul class="social">
             <li>
                 <a target="_blank" href="https://www.facebook.com/mait.tnm/" class="">
                     
                     <i class="icon fab fa-facebook-square fa-2x" style="color:#949497"></i>
                 </a>
             </li>
-            <!-- <li>
+            <li>
                 <a target="_blank" href="https://twitter.com/iosdofficial" class="">
                     <i class="icon fab fa-twitter fa-2x" style="color:#949497"></i>
                 </a>
-            </li> -->
-            <!-- <li>
+            </li>
+            <li>
                 <a target="_blank" href="https://www.linkedin.com/company/iosd?trk=ppro_cprofn" class="">
                     <i class="icon fab fa-linkedin-in fa-2x" style="color:#949497"></i>
                 </a>
-            </li> -->
-            <!-- <li>
+            </li>
+            <li>
                 <a target="_blank" href="https://github.com/IOSD" class="">
                     <i class="icon fab fa-github fa-2x" style="color:#949497"></i>
                 </a>
-            </li> -->
+            </li>
             <li>
                 <a target="_blank" href="https://www.instagram.com/iosdofficial/" class="">
                     <i class="icon fab fa-instagram fa-2x" style="color:#949497"></i>
                 </a>
             </li>
 
-        </ul>
-        <div class="row text-center" style="color: white">
-            <!-- Made with <i class="fa fa-heart"></i> by <a href="http://mait.ac.in"></a>MAIT -->
-        </div>
+        </ul> -->
+
+        <ul class="social">
+                 <li>
+                    <a href="https://www.facebook.com/mait.tnm/" target = "_blank"><i class="icon fab fa-facebook-square fa-2x" style="color:#949497"></i></a>
+                </li>
+                 <li>
+                    <a href="https://twitter.com/tnmofficial18" target = "_blank"><i class="icon fab fa-twitter fa-2x" style="color:#949497"></i></a>
+                </li>
+                 <li>
+                    <a href="https://www.instagram.com/techsurgemridang2k18/" target = "_blank"><i class="icon fab fa-instagram fa-2x" style="color:#949497"></i></a>
+                </li>
+                 <li>
+                    <a href="https://www.snapchat.com/add/tnm2k18/" target = "_blank"><i class="icon fab fa-snapchat fa-2x" style="color:#949497"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:tnm2k18@gmail.com?Subject=Techsurge%20Mridang%202K18" target="_top"><i class="icon fa fa-envelope fa-2x" style="color: #949497"></i></a>
+                </li>
+                <!-- <li><a href="mailto:iosdmait@iosd.com?Subject=Techno%20Fest" target = "_top" ></a></li> -->
+             </ul>
+             <br>
+        <p></p>
+        <div style="color: white; text-align: center;">
+            Made with <i class="fa fa-heart" style="color: #ef4035"></i> by <a href="http://iosd.tech">IOSD MAIT</a>
+  </div>
     </footer>
     <input type="hidden" id="thanks" value="0"/>
 

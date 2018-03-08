@@ -8289,7 +8289,7 @@ body {
     position: absolute;
     width: 100%;
     left: 0px;
-    top: 90px;
+    /*top: 90px;*/
     padding: 0 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -8448,7 +8448,7 @@ body {
 
 @media all and (min-width: 1200px) {
     .form-wrapper {
-        padding: 120px 0 60px
+        padding: 80px 0 60px
     }
 }
 
@@ -8548,7 +8548,7 @@ body {
     position: relative
 }
 
-.timetable-wrapper .title:after {
+/*.timetable-wrapper .title:after {
     position: absolute;
     width: 80px;
     left: 0px;
@@ -8556,7 +8556,7 @@ body {
     bottom: 30px;
     content: "";
     background: #ebebeb
-}
+}*/
 
 @media all and (max-width: 767px) {
     .timetable-wrapper .title {
@@ -8760,16 +8760,16 @@ body {
 .location-wrapper {
     position: relative;
     background: #28282e;
-    overflow: hidden
+    /*overflow: hidden*/
 }
 
 .location-wrapper .full-map {
-    width: 50%;
+    /*width: 50%;*/
     height: 100%;
     position: absolute;
     top: 0px;
     right: 0px;
-    background: #f5f5f5
+    /*background: #f5f5f5*/
 }
 
 .location-wrapper .left {
@@ -8779,10 +8779,10 @@ body {
 
 .location-wrapper .left:after {
     position: absolute;
-    right: -500px;
+    /*right: -500px;*/
     top: 0px;
-    border-right: 500px solid transparent;
-    border-top: 500px solid #f5f5f5;
+    /*border-right: 500px solid transparent;*/
+    /*border-top: 500px solid #f5f5f5;*/
     content: "";
     width: 1px;
     height: 100%
@@ -8793,7 +8793,7 @@ body {
     right: 100%;
     width: 2000px;
     height: 100%;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
     content: "";
     top: 0px
 }
@@ -8809,7 +8809,7 @@ body {
 }
 
 .location-wrapper .inner {
-    padding: 60px 0
+    padding: 20px 0
 }
 
 .location-wrapper .note {
@@ -8853,11 +8853,11 @@ body {
     text-align: left;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     position: relative
 }
 
-.location-wrapper .title:after {
+/*.location-wrapper .title:after {
     position: absolute;
     width: 80px;
     left: 0px;
@@ -8865,7 +8865,7 @@ body {
     bottom: 30px;
     content: "";
     background: #ebebeb
-}
+}*/
 
 .location-wrapper .subtitle {
     position: relative;
@@ -9156,11 +9156,11 @@ footer, .footer {
     margin-left: 90px;
     position: relative
 }*/
-
+/*
 footer .social, .footer .social {
     float: right;
     position: relative;
-    margin: 0px;
+    margin: 0px auto;
     margin-right: 90px
 }
 
@@ -9185,6 +9185,7 @@ footer .social li a i, .footer .social li a i {
 footer .social li a i svg, .footer .social li a i svg {
     display: block
 }
+*/
 
 footer .social li a i svg g, .footer .social li a i svg g, footer .social li a i svg path, .footer .social li a i svg path {
     -webkit-transition: fill .2s ease-out 0;
@@ -9193,7 +9194,7 @@ footer .social li a i svg g, .footer .social li a i svg g, footer .social li a i
     transition: fill .2s ease-out 0;
     fill: #76767B
 }
-
+/*
 footer .social li a i.fb, .footer .social li a i.fb {
     width: 12px;
     height: 23px;
@@ -9235,7 +9236,7 @@ footer .social li a i.dribbble, .footer .social li a i.dribbble {
     margin-top: -11px;
     margin-left: -11px
 }
-
+*/
 footer .social li a:hover svg g, .footer .social li a:hover svg g, footer .social li a:hover svg path, .footer .social li a:hover svg path {
     fill: #ffffff
 }
