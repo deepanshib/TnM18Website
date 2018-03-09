@@ -17,9 +17,12 @@ $(document).ready(function () {
     //Background images-
 
     var images_bg = [
-        'static/img/placeholder-fullscreen.png',
-        'static/img/image-placeholder.jpg',
-        'static/img/top_bg.jpg',
+        'static/img/pic1.png',
+        'static/img/pic2.png',
+        'static/img/pic3.png',
+        'static/img/pic4.png',
+        'static/img/pic5.png',
+
     ]
 
     $('.fullBackground').fullClip({

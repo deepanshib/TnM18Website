@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="static/css/custom.css"/>
     <link rel="stylesheet" href="static/css/gallery.css"/>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -236,51 +237,52 @@
         <span class="title"><h1>22 MARCH</h1></span>
 
         <div class="container" style="padding-left: 15%;padding-right: 15%;">
-        <div class="row_schedule">
-            <hr>
-            <div class="time_wrap">
-                9:00AM - 2:00PM
+            <div class="row_schedule">
+                <hr>
+                <div class="time_wrap">
+                    9:00AM - 2:00PM
+                </div>
+                <div class="name_wrap">
+                     Event 1
+                </div>
+                <hr>
+                <div class="time_wrap">
+                    2:00PM - 5:00PM
+                </div>
+                <div class="name_wrap">
+                     Event 2
+                </div>
+                <hr>
+                <div class="time_wrap">
+                    6:00PM - 11:00PM
+                </div>
+                <div class="name_wrap">
+                     Event 3
+                </div>
+                <hr>
             </div>
-            <div class="name_wrap">
-                 Event 1
-            </div>
-            <hr>
-            <div class="time_wrap">
-                2:00PM - 5:00PM
-            </div>
-            <div class="name_wrap">
-                 Event 2
-            </div>
-            <hr>
-            <div class="time_wrap">
-                6:00PM - 11:00PM
-            </div>
-            <div class="name_wrap">
-                 Event 3
-            </div>
-            <hr>
-        </div>
         </div>
 
     </div>
 
 
-
-    <a class="view-link" href="#" data-scrool-to="on" data-scroll-to-target=".timetable-wrapper">
-        <div class="link-outer">
-            <div class="link-inner">
-                View Events Information
-                <i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17"
-                         height="10" view-box="0 0 17 10">
-                        <desc>Created with Avocode</desc>
-                        <path d="M 8.5 9.96 L 17 1.14 L 15.9 0 L 7.4 8.82 L 8.5 9.96 Z" fill="#ffffff"/>
-                        <path d="M 8.49 10 L 0 1.18 L 1.13 0 L 9.63 8.82 L 8.49 10 Z" fill="#ffffff"/>
-                    </svg>
-                </i>
+    <!-- <div class="container" style="padding-left: 15%;padding-right: 15%;"> -->
+        <a class="view-link" href="#" data-scrool-to="on" data-scroll-to-target=".timetable-wrapper">
+            <div class="link-outer">
+                <div class="link-inner">
+                    View Events Information
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17"
+                             height="10" view-box="0 0 17 10">
+                            <desc>Created with Avocode</desc>
+                            <path d="M 8.5 9.96 L 17 1.14 L 15.9 0 L 7.4 8.82 L 8.5 9.96 Z" fill="#ffffff"/>
+                            <path d="M 8.49 10 L 0 1.18 L 1.13 0 L 9.63 8.82 L 8.49 10 Z" fill="#ffffff"/>
+                        </svg>
+                    </i>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+    <!-- </div> -->
 </div>
 
 
@@ -507,9 +509,9 @@
                                   data-from="top:-80px, opacity: 0"
                                   data-to="top:0, opacity:1, duration:0.9, delay:0.5, animation:Power3.easeOut" style="text-align: center;">Today's Dreams Tommorow's Reality </span>
                         </div>
-                        <div class="row button-wrapper">
+                        <div class="button-wrapper">
                             <div class="col-md-12">
-                                <a href="#lectures-wrapper" class="call-upcomes-lectures"
+                                <a href="#lectures-wrapper" class="call-upcomes-lectures event-lecture-upcomes"
                                    data-scroll-to-target=".front-container" style="margin-top:110px">
                                     <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; view events</span>
                                     <i>
@@ -735,12 +737,12 @@
                         <span class="lecture-title"> LAN Gaming</span>
                         <span class="lecture-link">Vew event details<span> +</span></span>
                     </div>
-                    <div class="lectures-box width-25 md-trigger" data-box="codewar2" data-modal="modal-9">
+                    <div class="lectures-box width-25 md-trigger" data-box="codewar2" data-modal="modal-10">
 
                         <span class="lecture-title">Hackathon</span>
                         <span class="lecture-link">Vew event details<span> +</span></span>
                     </div>
-                    <div class="lectures-box width-25 md-trigger" data-box="webdev" data-modal="modal-10">
+                    <div class="lectures-box width-25 md-trigger" data-box="webdev" data-modal="modal-9">
 
                         <span class="lecture-title">Robo soccer</span>
                         <span class="lecture-link">Vew event details<span> +</span></span>
@@ -1234,7 +1236,7 @@
                 <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
                     <div class="inner">
                             <span class="note">
-                                <i class="nbr">05</i>
+                                <i class="nbr">06</i>
                                 who supported us?
                             </span>
                         <h2 class="title" style="text-align: center;">Our Past Sponsors</h2>
@@ -1380,19 +1382,98 @@
         </div>
 
     </div>
-</section>
-    <section id="faq" class="page-section light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 pull-left">
-                    <h1 class="section-title">
 
-                        <span class="title-inner wow animated fadeInRight animated">FAQ <small> / JUDGE A MAN BY HIS QUESTIONS RATHER THAN HIS ANSWERS</small></span>
-                    </h1>
-                </div>
-                <div class="col-md-4 text-right-md pull-right">
+
+<!-- <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
+                    <div class="inner">
+                            <span class="note">
+                                <i class="nbr">05</i>
+                                who is supporting us?
+                            </span>
+                        <h2 class="title" style="text-align: center;">TnM'18 Sponsors</h2>
+                    </div>
                 </div>
             </div>
+
+
+    <span class="title-inner wow animated fadeInRight animated">FAQ <small> / JUDGE A MAN BY HIS QUESTIONS RATHER THAN HIS ANSWERS</small></span> -->
+</section>
+    <section id="faq" class="page-section light">
+        <div class="timetable-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
+                    <div class="inner">
+                            <span class="note">
+                                <i class="nbr">07</i>
+                                Frequently Answered Questions
+                            </span>
+                        <h2 class="title" style="text-align: center;">FAQ's</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="faq-container">
+<!--             <h4>Registration Deadlines</h4>
+            <span class="title">MAITHacks</span><span class="title-date">8 March 12 Noon</span><br>
+            <span class="title">Pixel</span><span class="title-date">7 March 12 Midnight</span><br>
+            <span class="title">CodeSaga</span><span class="title-date">9 March 12 Midnight</span><br> -->
+            <ul>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>How was TnM '17?</h2>
+                <div>
+                    <p class="ques">Can students from branches apart from CSE/IT participate? Also, can hardware models like that of IOT, block chain be included in the project submission?</p>
+                    <p class="ans">Students from any branch can take part in the competition. Yes, the project submission can include both hardware and software components.</p>
+
+                    <p class="ques">Do the teams need to send a part of the working model while submitting project ideas for the online round?</p>
+                    <p class="ans"> No, it is not necessary to submit a prototype of the working project along with the project idea. But the project idea must be elaborate and well explained.</p>
+
+                    <p class="ques">Can the students selected for 2nd round complete the project on campus and do they need to carry their laptops?</p>
+                    <p class="ans">No, the campus round is only for project pitching and demonstration and the working project must be at least 70% completed before bringing it to the campus round. Yes, the students need to carry their own laptops. </p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Pixel</h2>
+                <div>
+                    <p class="ques">What all softwares are allowed for the UI/UX competition and do the participants need to bring laptops?</p>
+                    <p class="ans">Adobe Photoshop, Illustrator or any other relevant software can be used. But we won’t provide any software on the spot. So please bring your own software. Yes, the participants need to carry their own laptops. No computers will be provided on the spot.</p>
+
+                    <p class="ques">Is there any preferred theme on which the students need to design for the online round?</p>
+                    <p class="ans">No, any relevant theme can be chosen. But the idea must be unique and plagiarized designs will not be accepted. </p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>CodeSaga</h2>
+                <div>
+                    <p class="ques">Will the first round take place in the college campus? What kind of questions will be provided in the round 2?</p>
+                    <p class="ans">Yes the first round will take place in the college campus itself. Location details will be provided on the spot.  All the details will be provided on the spot. But for solving the questions, as with the first round, the questions can be attempted in any language.</p>
+
+                    <p class="ques">Do the participants need to bring their own laptops for the event?</p>
+                    <p class="ans"> No, the event will take place in college labs. So there is no need for laptops. If you bring your own laptops then you have to manage the internet connection on your own.  </p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                <i></i>
+                <h2>Workshop</h2>
+                <div>
+                    <p class="ques">Will certification be provided for attending the workshop?</p>
+                    <p class="ans">Yes, participation certificates will be provided for all the events including the workshop.</p>
+                </div>
+            </li>
+            </ul>
+            </div>
+<!--             <div class="row">        
             <div class="row faq margin-top wow animated fadeInUp">
                 <div class="col-sm-6 col-md-6 pull-left">
                     <ul id="tabs-faq" class="nav">
@@ -1454,7 +1535,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <footer class="footer">
@@ -1533,7 +1614,7 @@
     </footer>
     <input type="hidden" id="thanks" value="0"/>
 
-    <div class="popup md-modal md-effect-12" id="modal-7" data-title="Dev Sprint"
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-7" data-title="Dev Sprint"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -1595,7 +1676,7 @@
 
     <!-- Event Models -->
 
-    <div class="popup md-modal md-effect-12" id="modal-8" data-title="Tech Praxis IOS/Android"
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-8" data-title="Tech Praxis IOS/Android"
          data-vurl="tech-praxis-ios-android">
         <div class="md-content">
             <div class="container">
@@ -1652,7 +1733,7 @@
     </div>
 
 
-    <div class="popup md-modal md-effect-12" id="modal-9" data-title="Code War 2 "
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-9" data-title="Code War 2 "
          data-vurl="code-war-2">
         <div class="md-content">
             <div class="container">
@@ -1699,7 +1780,7 @@
     </div>
 
 
-    <div class="popup md-modal md-effect-12" id="modal-10" data-title="Web Dev"
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-10" data-title="Web Dev"
          data-vurl="web-dev">
         <div class="md-content">
             <div class="container">
@@ -1752,7 +1833,7 @@
     </div>
 
 
-    <div class="popup md-modal md-effect-12" id="modal-11" data-title="Algo Design"
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-11" data-title="Algo Design"
          data-vurl="algo-design">
         <div class="md-content">
             <div class="container">
@@ -1798,7 +1879,7 @@
         </div>
     </div>
 
-    <div class="popup md-modal md-effect-12" id="modal-12" data-title="Dont Know Code" data-vurl="dont-know-code">
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-12" data-title="Dont Know Code" data-vurl="dont-know-code">
         <div class="md-content">
             <div class="container">
                 <div class="row">
@@ -1843,7 +1924,7 @@
         </div>
     </div>
 
-    <div class="popup md-modal md-effect-12" id="modal-13" data-title="Code In Less" data-vurl="code-in-less">
+    <div class="popup md-modal md-effect-12 tech-popup" id="modal-13" data-title="Code In Less" data-vurl="code-in-less">
         <div class="md-content">
             <div class="container">
                 <div class="row">
@@ -1888,7 +1969,7 @@
             </div>
         </div>
     </div>
-	  <div class="popup md-modal md-effect-12" id="modal-14" data-title="Androidgaming"
+	  <div class="popup md-modal md-effect-12 tech-popup" id="modal-14" data-title="Androidgaming"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -1948,7 +2029,7 @@
         </div>
     </div>
 
-  <div class="popup md-modal md-effect-12" id="modal-15" data-title="linefollower"
+  <div class="popup md-modal md-effect-12 tech-popup" id="modal-15" data-title="linefollower"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2008,7 +2089,7 @@
         </div>
     </div>
 
-	  <div class="popup md-modal md-effect-12" id="modal-16" data-title="scrablego"
+	  <div class="popup md-modal md-effect-12 tech-popup" id="modal-16" data-title="scrablego"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2069,7 +2150,7 @@
     </div>
 
 
-	  <div class="popup md-modal md-effect-12" id="modal-17" data-title="junkyardwars"
+	  <div class="popup md-modal md-effect-12 tech-popup" id="modal-17" data-title="junkyardwars"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2130,7 +2211,7 @@
     </div>
 
 
-	  <div class="popup md-modal md-effect-12" id="modal-18" data-title="techpaperppt"
+	  <div class="popup md-modal md-effect-12 tech-popup" id="modal-18" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2190,7 +2271,7 @@
         </div>
     </div>
 
-    <div class="popup md-modal md-effect-12" id="modal-19" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-19" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2249,7 +2330,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-20" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-20" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2308,7 +2389,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-21" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-21" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2367,7 +2448,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-22" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-22" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2426,7 +2507,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-23" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-23" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2485,7 +2566,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-24" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-24" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2544,7 +2625,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-25" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-25" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2603,7 +2684,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-26" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-26" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2662,7 +2743,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-27" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-27" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2721,7 +2802,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-28" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-28" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2780,7 +2861,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-29" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-29" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2839,7 +2920,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-30" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-30" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2898,7 +2979,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-31" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-31" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -2957,7 +3038,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-32" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 non-tech-popup" id="modal-32" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3016,7 +3097,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-33" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-33" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3026,6 +3107,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3075,7 +3157,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-34" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-34" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3085,6 +3167,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3134,7 +3217,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-35" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-35" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3144,6 +3227,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3193,7 +3277,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-36" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-36" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3203,6 +3287,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3252,7 +3337,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-37" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-37" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3262,6 +3347,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3311,7 +3397,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-38" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-38" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3321,6 +3407,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3370,7 +3457,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-39" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-39" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3380,6 +3467,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3429,7 +3517,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-40" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-40" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3439,6 +3527,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3488,7 +3577,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-41" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-41" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3498,6 +3587,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3547,7 +3637,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-42" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-42" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3557,6 +3647,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3606,7 +3697,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-43" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-43" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3616,6 +3707,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
@@ -3665,7 +3757,7 @@
             </div>
         </div>
     </div>
-    <div class="popup md-modal md-effect-12" id="modal-44" data-title="techpaperppt"
+    <div class="popup md-modal md-effect-12 cult-popup" id="modal-44" data-title="techpaperppt"
          data-vurl="dev-sprint">
         <div class="md-content">
             <div class="container">
@@ -3675,6 +3767,7 @@
                             <svg data-modal-img="on" version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><g id="Shape_1_3_" enable-background="new"><g id="Shape_1"><g><rect x="11.423" y="-3.266" transform="matrix(0.7072 -0.707 0.707 0.7072 -5.3631 12.5102)" fill="#B7B7B7" width="2" height="31.993" /></g></g></g><g id="Shape_1_2_" enable-background="new"><g id="Shape_1_1_"><g><rect x="-3.42" y="11.73" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -5.3183 12.6213)" fill="#B7B7B7" width="31.993" height="2" /></g></g></g></svg>
                         </a>
                         <h1 class="popup-title has-line">Tech Paper Presentation</h1>
+                        <div class="imgin-popup"><img src="static/img/cult-back.png"></div>
                         <ul class="date">
                             Date: March 24th, 2018
                         </ul>
