@@ -332,7 +332,7 @@ var main = (function ($) {
     var windowWidth = $(window).width();
     var originalTitle = document.title;
     window.visibilityChanger = {
-        backMsg: "Come back!", visible: function () {
+        backMsg: "TnM 18!", visible: function () {
             document.title = originalTitle
         }, hidden: function () {
             visibilityChanger.removeTimer(), window.originalDocumentTitle = document.title, document.title = visibilityChanger.backMsg, visibilityChanger.addRemoveTimer()
