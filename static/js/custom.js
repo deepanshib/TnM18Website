@@ -22,6 +22,7 @@ $(document).ready(function () {
         'static/img/pic3.png',
         'static/img/pic4.png',
         'static/img/pic5.png',
+        // 'static/img/image-placeholder.jpg'
 
     ]
 

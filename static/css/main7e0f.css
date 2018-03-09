@@ -7373,7 +7373,7 @@ body {
     -o-transition: all .2s ease-out 0;
     transition: all .2s ease-out 0;
     z-index: 9;
-    left: 20%
+    /*left: 20%*/
 }
 
 .front-container .about-arrow i {
@@ -7527,21 +7527,24 @@ body {
     top: 0px
 }
 
-.button-wrapper {
-    padding-top: 50px;
+.button-wrapper .event_button {
+    /*padding-top: 50px;*/
     text-align: right;
 }
 
-
+.button-wrapper .gallery_button {
+    /*padding-top: 50px;*/
+    text-align: left;
+}
 
 .call-upcomes-lectures {
     font-weight: bold;
     display: inline-block;
-    border-left: 90px solid transparent;
+    /*border-right: 90px solid transparent;*/
     border-bottom: 90px solid #ef4035;
     line-height: 90px;
     height: 0;
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
@@ -7554,7 +7557,28 @@ body {
     padding: 0 45px 0 15px;
     outline: none
 }
-
+/*
+.gallery_button .call-upcomes-lectures {
+    font-weight: bold;
+    display: inline-block;
+    border-left: 90px solid transparent;
+    border-bottom: 90px solid #ef4035;
+    line-height: 90px;
+    height: 0;
+    font-family: 'montserrat';
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-out 0;
+    -moz-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0;
+    transition: all .2s ease-out 0;
+    padding: 0 45px 0 15px;
+    outline: none
+}
+*/
 .call-upcomes-lectures span {
     display: inline-block
 }
@@ -7587,10 +7611,10 @@ body {
 }
 
 .call-upcomes-lectures:hover {
-    color: #fff;
+    color: #ef4035;
     text-decoration: none;
-    border-left: 90px solid transparent;
-    border-bottom: 90px solid #28282e;
+    /*border-left: 90px solid transparent;*/
+    border-bottom: 90px solid #fff;
     outline: none
 }
 
@@ -7609,7 +7633,7 @@ body {
 .call-upcomes-lectures:active, .call-upcomes-lectures:focus {
     color: #ef4035;
     text-decoration: none;
-    border-left: 90px solid transparent;
+    /*border-left: 90px solid transparent;*/
     border-bottom: 90px solid #ffffff;
     outline: none
 }
@@ -7912,15 +7936,22 @@ body {
     top: 0px
 }
 
-.views-expertise-wrapper.second, .views-expertise-wrapper.second-new {
+.views-expertise-wrapper.second-new {
+    background: #f1f1f1;
     position: relative;
-    background: #f5f5f5;
+    z-index: 1;
+    padding: 80px 0 45px
+}
+
+.views-expertise-wrapper.second {
+    position: relative;
+    background: #f1f1f1;
     z-index: 1;
     padding: 80px 0 45px
 }
 
 .views-expertise-wrapper.second .note, .views-expertise-wrapper.second-new .note {
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 11px;
     line-height: 2.7em;
@@ -7996,7 +8027,7 @@ body {
     color: #797979;
     text-align: center;
     /*padding-right: 20%;*/
-    padding-bottom: 110px
+    padding-bottom: 80px
 }
 
 .views-expertise-wrapper.second .sign-up-arrow, .views-expertise-wrapper.second-new .sign-up-arrow {
@@ -8097,8 +8128,9 @@ body {
     }
 
     .call-upcomes-lectures:hover {
-        border-left: 50px solid transparent;
-        border-bottom: 50px solid #ffffff
+        color: white;
+        /*border-left: 50px solid transparent;*/
+        border-bottom: 50px solid #ef4035
     }
 
     .call-upcomes-lectures.gray {
@@ -8111,7 +8143,7 @@ body {
     }
 
     .call-upcomes-lectures.gray:hover {
-        border-left: 50px solid transparent;
+        /*border-left: 50px solid transparent;*/
         border-bottom: 50px solid #ef4035
     }
 
@@ -8174,7 +8206,7 @@ body {
 
 @media all and (min-width: 1200px) {
     .views-expertise-wrapper.second, .views-expertise-wrapper.second-new {
-        padding: 130px 0 65px
+        padding: 100px 0 65px
     }
 }
 
@@ -8200,7 +8232,7 @@ body {
     display: block;
     text-align: center;
     position: relative;
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 17px;
     line-height: 1.8em;
@@ -8491,7 +8523,7 @@ body {
 }
 
 .timetable-wrapper .note {
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 11px;
     line-height: 2.7em;

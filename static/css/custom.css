@@ -436,12 +436,12 @@ footer .social a:hover {
   background-repeat: no-repeat;
 }
 .cult-popup {
-    background: url('../img/cult-desc.png');
-    /*background-size: cover;
-    background-repeat: no-repeat;*/
+    background: url('../img/cult-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .non-tech-popup {
-    background: url('../img/');
+    background: url('../img/tech-desc1.png');
 }
 
 .cult-popup .popup-title {
@@ -768,3 +768,7 @@ footer .social a:hover {
 }
 
 /* //FAQ SECTION */
+/*
+.views-expertise-wrapper.second-new {
+      background: #28282e;
+}*/
