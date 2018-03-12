@@ -84,6 +84,15 @@
     color: #fff;
 
 }
+
+.timetable-wrapper .row .bg-line-tp img {
+  margin-top: -40px;
+  margin-bottom: -70px;
+}
+
+.timetable-wrapper .row .bg-line-bt img {
+  
+}
  
 .timetable_wrap .link-outer, .timetable_wrap .link-inner {
     background: #28282e;
@@ -130,7 +139,7 @@
 
 .tt-inner {
     cursor: pointer;
-    background:url('../img/bg-tt.png');
+    background:url('https://content.screencast.com/users/manishsahani/folders/Default/media/fe7b90c4-eb1c-4efe-b55a-fbf233cb2125/hexagon.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -182,7 +191,7 @@ h4.day-t{
 
 
 .fullBackground {
-  background-position: center center;
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
@@ -772,3 +781,4 @@ footer .social a:hover {
 .views-expertise-wrapper.second-new {
       background: #28282e;
 }*/
+

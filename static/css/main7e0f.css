@@ -7707,7 +7707,7 @@ body {
 .title-wrapper {
     position: relative;
     background: #ffffff;
-    padding: 95px 0px 150px
+    padding: 55px 0px 80px
 }
 
 .title-wrapper .title {
@@ -7718,6 +7718,15 @@ body {
     text-align: center;
     position: relative;
     display: block
+}
+
+.title-wrapper .bg-line-bt img {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title-wrapper .bg-line-tp img {
+    margin-top: 40px;
 }
 
 .title-wrapper .line {
@@ -7760,7 +7769,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 95px 0px 150px
+        padding: 55px 0px 80px
     }
 
     .title-wrapper .title {
@@ -7866,7 +7875,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 150px 0px
+        padding: 80px 0px
     }
 
     .title-wrapper .title {
@@ -7895,7 +7904,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 150px 0
+        padding: 80px 0
     }
 
     .title-wrapper .title {
@@ -7940,14 +7949,16 @@ body {
     background: #f1f1f1;
     position: relative;
     z-index: 1;
-    padding: 80px 0 45px
+    text-align: center;
+    padding: 50px 0 45px
 }
 
 .views-expertise-wrapper.second {
     position: relative;
     background: #f1f1f1;
     z-index: 1;
-    padding: 80px 0 45px
+    text-align: center;
+    padding: 50px 0 45px
 }
 
 .views-expertise-wrapper.second .note, .views-expertise-wrapper.second-new .note {
@@ -7962,7 +7973,7 @@ body {
 }
 
 .views-expertise-wrapper.second .note .nbr, .views-expertise-wrapper.second-new .note .nbr {
-    position: absolute;
+    /*position: absolute;*/
     right: 100%;
     top: -8px;
     font-family: 'Merriweather';
@@ -7973,7 +7984,7 @@ body {
 }
 
 .views-expertise-wrapper.second .note .nbr:after, .views-expertise-wrapper.second-new .note .nbr:after {
-    position: absolute;
+    /*position: absolute;*/
     right: -10px;
     top: 5px;
     width: 9px;
@@ -8020,14 +8031,14 @@ body {
 .views-expertise-wrapper.second .text, .views-expertise-wrapper.second-new .text {
     position: relative;
     display: block;
-    font-family: 'proxima-nova';
+    font-family: 'Roboto', 'proxima-nova';
     font-weight: 300;
     font-size: 17px;
     line-height: 1.8em;
     color: #797979;
     text-align: center;
     /*padding-right: 20%;*/
-    padding-bottom: 80px
+    /*padding-bottom: 80px*/
 }
 
 .views-expertise-wrapper.second .sign-up-arrow, .views-expertise-wrapper.second-new .sign-up-arrow {
@@ -8237,8 +8248,8 @@ body {
     font-size: 17px;
     line-height: 1.8em;
     color: #797979;
-    padding: 0 25%;
-    padding-bottom: 50px
+    /*padding: 0 25%;*/
+    /*padding-bottom: 50px*/
 }
 
 .form-wrapper .note.on-top {
@@ -8492,7 +8503,7 @@ body {
     position: relative;
     background: #ffffff;
     overflow: hidden;
-    padding: 60px 0
+    padding: 30px 0
 }
 
 .page-section {
@@ -8502,7 +8513,7 @@ body {
 
 @media all and (min-width: 1200px) {
     .timetable-wrapper {
-        padding: 100px 0
+        padding: 50px 0 80px 0;
     }
     #faq .timetable-wrapper {
         padding: 10px 0;
@@ -9369,6 +9380,7 @@ footer:after, .footer:after {
     height: 90%;
     top: 5%;
     left: 130%;
+
     z-index: 9999;
     padding-left: 80px;
     overflow: visible;
@@ -9379,10 +9391,11 @@ footer:after, .footer:after {
 
 .lectures-wrapper .close-lectures {
     position: absolute;
+    border-radius: 80%;
     width: 80px;
     height: 80px;
     background: #ef4035;
-    left: 0;
+    left: 0px;
     top: 0px;
     -webkit-transition: background .2s ease-out 0;
     -moz-transition: background .2s ease-out 0s;
@@ -9390,24 +9403,45 @@ footer:after, .footer:after {
     transition: background .2s ease-out 0
 }
 
+.lectures-wrapper .close-lectures svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.lectures-wrapper .close-lectures svg rect {
+    fill: white;
+}
+
+
 .lectures-wrapper .close-lectures i {
-    width: 9px;
+/*    width: 9px;
     height: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -4px;
     margin-top: -9px;
-    background: url("../img/sprite.png") no-repeat -36px -50px
+    background: url("../img/sprite.png") no-repeat -36px -50px*/
 }
 
 .lectures-wrapper .close-lectures:hover {
     background: #ffffff
 }
 
-.lectures-wrapper .close-lectures:hover i {
-    background-position: -45px -50px
+.lectures-wrapper .close-lectures:hover svg rect {
+    fill: #ef4035;
 }
+
+
+
+/*.lectures-wrapper .close-lectures:hover i {
+    background-position: -45px -50px
+}*/
 
 .lectures-wrapper .inner {
     display: table;
