@@ -7373,7 +7373,7 @@ body {
     -o-transition: all .2s ease-out 0;
     transition: all .2s ease-out 0;
     z-index: 9;
-    left: 20%
+    /*left: 20%*/
 }
 
 .front-container .about-arrow i {
@@ -7527,21 +7527,24 @@ body {
     top: 0px
 }
 
-.button-wrapper {
-    padding-top: 50px;
+.button-wrapper .event_button {
+    /*padding-top: 50px;*/
     text-align: right;
 }
 
-
+.button-wrapper .gallery_button {
+    /*padding-top: 50px;*/
+    text-align: left;
+}
 
 .call-upcomes-lectures {
     font-weight: bold;
     display: inline-block;
-    border-left: 90px solid transparent;
+    /*border-right: 90px solid transparent;*/
     border-bottom: 90px solid #ef4035;
     line-height: 90px;
     height: 0;
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
@@ -7554,7 +7557,28 @@ body {
     padding: 0 45px 0 15px;
     outline: none
 }
-
+/*
+.gallery_button .call-upcomes-lectures {
+    font-weight: bold;
+    display: inline-block;
+    border-left: 90px solid transparent;
+    border-bottom: 90px solid #ef4035;
+    line-height: 90px;
+    height: 0;
+    font-family: 'montserrat';
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-out 0;
+    -moz-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0;
+    transition: all .2s ease-out 0;
+    padding: 0 45px 0 15px;
+    outline: none
+}
+*/
 .call-upcomes-lectures span {
     display: inline-block
 }
@@ -7587,10 +7611,10 @@ body {
 }
 
 .call-upcomes-lectures:hover {
-    color: #fff;
+    color: #ef4035;
     text-decoration: none;
-    border-left: 90px solid transparent;
-    border-bottom: 90px solid #28282e;
+    /*border-left: 90px solid transparent;*/
+    border-bottom: 90px solid #fff;
     outline: none
 }
 
@@ -7609,7 +7633,7 @@ body {
 .call-upcomes-lectures:active, .call-upcomes-lectures:focus {
     color: #ef4035;
     text-decoration: none;
-    border-left: 90px solid transparent;
+    /*border-left: 90px solid transparent;*/
     border-bottom: 90px solid #ffffff;
     outline: none
 }
@@ -7683,7 +7707,7 @@ body {
 .title-wrapper {
     position: relative;
     background: #ffffff;
-    padding: 95px 0px 150px
+    padding: 55px 0px 80px
 }
 
 .title-wrapper .title {
@@ -7694,6 +7718,15 @@ body {
     text-align: center;
     position: relative;
     display: block
+}
+
+.title-wrapper .bg-line-bt img {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title-wrapper .bg-line-tp img {
+    margin-top: 40px;
 }
 
 .title-wrapper .line {
@@ -7736,7 +7769,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 95px 0px 150px
+        padding: 55px 0px 80px
     }
 
     .title-wrapper .title {
@@ -7842,7 +7875,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 150px 0px
+        padding: 80px 0px
     }
 
     .title-wrapper .title {
@@ -7871,7 +7904,7 @@ body {
     }
 
     .title-wrapper {
-        padding: 150px 0
+        padding: 80px 0
     }
 
     .title-wrapper .title {
@@ -7912,15 +7945,24 @@ body {
     top: 0px
 }
 
-.views-expertise-wrapper.second, .views-expertise-wrapper.second-new {
+.views-expertise-wrapper.second-new {
+    background: #f1f1f1;
     position: relative;
-    background: #f5f5f5;
     z-index: 1;
-    padding: 80px 0 45px
+    text-align: center;
+    padding: 50px 0 45px
+}
+
+.views-expertise-wrapper.second {
+    position: relative;
+    background: #f1f1f1;
+    z-index: 1;
+    text-align: center;
+    padding: 50px 0 45px
 }
 
 .views-expertise-wrapper.second .note, .views-expertise-wrapper.second-new .note {
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 11px;
     line-height: 2.7em;
@@ -7931,7 +7973,7 @@ body {
 }
 
 .views-expertise-wrapper.second .note .nbr, .views-expertise-wrapper.second-new .note .nbr {
-    position: absolute;
+    /*position: absolute;*/
     right: 100%;
     top: -8px;
     font-family: 'Merriweather';
@@ -7942,7 +7984,7 @@ body {
 }
 
 .views-expertise-wrapper.second .note .nbr:after, .views-expertise-wrapper.second-new .note .nbr:after {
-    position: absolute;
+    /*position: absolute;*/
     right: -10px;
     top: 5px;
     width: 9px;
@@ -7989,14 +8031,14 @@ body {
 .views-expertise-wrapper.second .text, .views-expertise-wrapper.second-new .text {
     position: relative;
     display: block;
-    font-family: 'proxima-nova';
+    font-family: 'Roboto', 'proxima-nova';
     font-weight: 300;
     font-size: 17px;
     line-height: 1.8em;
     color: #797979;
     text-align: center;
     /*padding-right: 20%;*/
-    padding-bottom: 110px
+    /*padding-bottom: 80px*/
 }
 
 .views-expertise-wrapper.second .sign-up-arrow, .views-expertise-wrapper.second-new .sign-up-arrow {
@@ -8097,8 +8139,9 @@ body {
     }
 
     .call-upcomes-lectures:hover {
-        border-left: 50px solid transparent;
-        border-bottom: 50px solid #ffffff
+        color: white;
+        /*border-left: 50px solid transparent;*/
+        border-bottom: 50px solid #ef4035
     }
 
     .call-upcomes-lectures.gray {
@@ -8111,7 +8154,7 @@ body {
     }
 
     .call-upcomes-lectures.gray:hover {
-        border-left: 50px solid transparent;
+        /*border-left: 50px solid transparent;*/
         border-bottom: 50px solid #ef4035
     }
 
@@ -8174,7 +8217,7 @@ body {
 
 @media all and (min-width: 1200px) {
     .views-expertise-wrapper.second, .views-expertise-wrapper.second-new {
-        padding: 130px 0 65px
+        padding: 100px 0 65px
     }
 }
 
@@ -8200,13 +8243,13 @@ body {
     display: block;
     text-align: center;
     position: relative;
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 17px;
     line-height: 1.8em;
     color: #797979;
-    padding: 0 25%;
-    padding-bottom: 50px
+    /*padding: 0 25%;*/
+    /*padding-bottom: 50px*/
 }
 
 .form-wrapper .note.on-top {
@@ -8460,7 +8503,7 @@ body {
     position: relative;
     background: #ffffff;
     overflow: hidden;
-    padding: 60px 0
+    padding: 30px 0
 }
 
 .page-section {
@@ -8470,7 +8513,7 @@ body {
 
 @media all and (min-width: 1200px) {
     .timetable-wrapper {
-        padding: 100px 0
+        padding: 50px 0 80px 0;
     }
     #faq .timetable-wrapper {
         padding: 10px 0;
@@ -8491,7 +8534,7 @@ body {
 }
 
 .timetable-wrapper .note {
-    font-family: 'proxima-nova';
+    font-family: 'montserrat';
     font-weight: 600;
     font-size: 11px;
     line-height: 2.7em;
@@ -9337,6 +9380,7 @@ footer:after, .footer:after {
     height: 90%;
     top: 5%;
     left: 130%;
+
     z-index: 9999;
     padding-left: 80px;
     overflow: visible;
@@ -9347,10 +9391,11 @@ footer:after, .footer:after {
 
 .lectures-wrapper .close-lectures {
     position: absolute;
+    border-radius: 80%;
     width: 80px;
     height: 80px;
     background: #ef4035;
-    left: 0;
+    left: 0px;
     top: 0px;
     -webkit-transition: background .2s ease-out 0;
     -moz-transition: background .2s ease-out 0s;
@@ -9358,24 +9403,45 @@ footer:after, .footer:after {
     transition: background .2s ease-out 0
 }
 
+.lectures-wrapper .close-lectures svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.lectures-wrapper .close-lectures svg rect {
+    fill: white;
+}
+
+
 .lectures-wrapper .close-lectures i {
-    width: 9px;
+/*    width: 9px;
     height: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -4px;
     margin-top: -9px;
-    background: url("../img/sprite.png") no-repeat -36px -50px
+    background: url("../img/sprite.png") no-repeat -36px -50px*/
 }
 
 .lectures-wrapper .close-lectures:hover {
     background: #ffffff
 }
 
-.lectures-wrapper .close-lectures:hover i {
-    background-position: -45px -50px
+.lectures-wrapper .close-lectures:hover svg rect {
+    fill: #ef4035;
 }
+
+
+
+/*.lectures-wrapper .close-lectures:hover i {
+    background-position: -45px -50px
+}*/
 
 .lectures-wrapper .inner {
     display: table;

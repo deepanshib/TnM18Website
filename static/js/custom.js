@@ -17,11 +17,12 @@ $(document).ready(function () {
     //Background images-
 
     var images_bg = [
-        'static/img/pic1.png',
-        'static/img/pic2.png',
-        'static/img/pic3.png',
-        'static/img/pic4.png',
-        'static/img/pic5.png',
+        'static/img/pic-1.jpg',
+        'static/img/pic-2.jpg',
+        'static/img/pic-3.jpg',
+        'static/img/pic-4.jpg',
+        'static/img/pic-5.jpg',
+        // 'static/img/image-placeholder.jpg'
 
     ]
 

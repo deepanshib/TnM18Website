@@ -332,7 +332,7 @@ var main = (function ($) {
     var windowWidth = $(window).width();
     var originalTitle = document.title;
     window.visibilityChanger = {
-        backMsg: "TnM 18!", visible: function () {
+        backMsg: "TnM 2018", visible: function () {
             document.title = originalTitle
         }, hidden: function () {
             visibilityChanger.removeTimer(), window.originalDocumentTitle = document.title, document.title = visibilityChanger.backMsg, visibilityChanger.addRemoveTimer()
@@ -546,7 +546,31 @@ var main = (function ($) {
         }, waypointPlugin2: function () {
             $('.form-wrapper').waypoint(function (direction) {
                 tmVirtualPage('/signup/', 'Signup');
-                document.title = 'Signup | Degordian Academy';
+                document.title = 'TnM 2018 | Events';
+            }, {offset: 0});
+            $('#location-wrap').waypoint(function (direction) {
+                tmVirtualPage('/signup/', 'Signup');
+                document.title = 'TnM 2018 | Location';
+            }, {offset: 0});
+            $('#sponsors-wrap').waypoint(function (direction) {
+                tmVirtualPage('/signup/', 'Signup');
+                document.title = 'TnM 2018 | Sponsors';
+            }, {offset: 0});
+            $('#timeline').waypoint(function (direction) {
+                tmVirtualPage('/signup/', 'Signup');
+                document.title = 'TnM 2018 | Timeline';
+            }, {offset: 0});
+            $('#faq').waypoint(function (direction) {
+                tmVirtualPage('/signup/', 'Signup');
+                document.title = 'TnM 2018 | FAQ';
+            }, {offset: 0});
+            // $('#gallery_wrapper').waypoint(function (direction) {
+            //     tmVirtualPage('/signup/', 'Signup');
+            //     document.title = 'TnM 2018 | Gallery';
+            // }, {offset: 0});
+            $('#about-mait').waypoint(function (direction) {
+                tmVirtualPage('/signup/', 'Signup');
+                document.title = 'TnM 2018 | About';
             }, {offset: 0});
         }
     };
