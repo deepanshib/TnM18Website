@@ -7706,15 +7706,17 @@ body {
 
 .title-wrapper {
     position: relative;
-    background: #ffffff;
-    padding: 55px 0px 80px
+    background: #28282e;
+    padding: 55px 0px 80px;
+    border-bottom: 2px solid #c47f01;
+    border-top: 2px solid #c47f01;
 }
 
 .title-wrapper .title {
     font-family: 'Merriweather';
     font-size: 30px;
     line-height: 1.3em;
-    color: #474747;
+    color: white;
     text-align: center;
     position: relative;
     display: block
@@ -7945,8 +7947,22 @@ body {
     top: 0px
 }
 
+.about_sec {
+
+}
+
+
+
 .views-expertise-wrapper.second-new {
-    background: #f1f1f1;
+/*background: #FFEEEE;   
+background: -webkit-linear-gradient(to right,   #EEE8AA, #FFEEEE);  
+background: linear-gradient(to right,   #EEE8AA, #FFEEEE); */
+    /*background-attachment: fixed;*/
+
+/*    background: url('../img/bg-gold4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background: #ededed;
     position: relative;
     z-index: 1;
     text-align: center;
@@ -7955,8 +7971,14 @@ body {
 
 .views-expertise-wrapper.second {
     position: relative;
-    background: #f1f1f1;
+/*background: #FFEEEE; 
+background: -webkit-linear-gradient(to right, #FFEEEE,      #EEE8AA); 
+background: linear-gradient(to right, #FFEEEE,  #EEE8AA);*/
+/*background: url('../img/bg-gold4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
     z-index: 1;
+    background: #d8d8d8;
     text-align: center;
     padding: 50px 0 45px
 }
@@ -8012,7 +8034,7 @@ body {
     height: 3px;
     bottom: 30px;
     content: "";
-    background: #ebebeb
+    background: inherit;
 }
 
 .views-expertise-wrapper.second .subtitle, .views-expertise-wrapper.second-new .subtitle {
@@ -8230,7 +8252,7 @@ body {
 .form-wrapper {
     position: relative;
     padding: 76px 0 60px;
-    background: #28282e
+    background: url('../img/grey-texture.gif');
 }
 
 @media all and (max-width: 767px) {
@@ -10263,12 +10285,69 @@ footer:after, .footer:after {
     left: 0px;
     visibility: visible;
     z-index: 1;
-    background: #333333
+    background: #000
 }
 
 .intro-wrapper .intro-line {
-    position: fixed;
+    /*position: fixed;*/
     top: 50%
+}
+
+.intro-line img {
+    -webkit-animation: beat .35s infinite alternate;
+    -moz-animation: beat .35s infinite alternate;
+    -ms-animation: beat .35s infinite alternate;
+    -o-animation: beat .35s infinite alternate;
+    animation: beat .35s infinite alternate;
+
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+@keyframes "beat" {
+ to {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+ }
+
+}
+
+@-moz-keyframes beat {
+ to {
+   -moz-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-webkit-keyframes "beat" {
+ to {
+   -webkit-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-ms-keyframes "beat" {
+ to {
+   -ms-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
+}
+
+@-o-keyframes "beat" {
+ to {
+   -o-transform: scale(1.4);
+   transform: scale(1.4);
+ }
+
 }
 
 .no-svg footer .social li a i, .no-svg .footer .social li a i {

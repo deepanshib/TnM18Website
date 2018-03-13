@@ -10,6 +10,7 @@
 
 }
 
+
 .lectures-wrapper {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -143,7 +144,39 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.tt-inner:hover {
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1s; 
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+}
+
+.form-wrapper .lectures-box img:hover {
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    overflow:hidden;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
 }
 
 .tt-style ul {
@@ -391,6 +424,7 @@ footer .social a:hover {
 .locate-wrapper {
     padding-top: 0px;
     padding-bottom: 20px;
+    background: #f1f1f1;
 }
 
 #myMap {
@@ -468,25 +502,36 @@ footer .social a:hover {
   font-weight: 700;
 }
 
-#faq .timetable-wrapper {
-  padding: 10px 0;
-}
+
 
 
 
 /* FAQ SECTION */
 #faq{
-    background-image: url("../images/faq_back2.jpg");
-    background-repeat: repeat;
-    background-size: 200px 200px;
-    background-attachment: fixed;
-    background-position: center;
+    background:#f1f1f1;
+}
+
+#faq .timetable-wrapper {
+      background:#f1f1f1;
+      padding: 10px 0;
+
+}
+
+#faq .timetable-wrapper .title {
+  padding-bottom: 30px;
+}
+#faq .timetable-wrapper .inner {
+  padding-top: 20px;
+}
+
+#faq .faq-container {
+      background:#f3f3f3;
+
 }
 
 .faq{
     padding-top: 30px;
     color: black;
-
 }
 /* .accordion {
   width: 100%;
@@ -616,7 +661,7 @@ footer .social a:hover {
     margin-bottom: 40px;
     transform: translate(-50%, 0);
     box-shadow: 0 10px 0 0 #ef4035 inset;
-    background-color: #fefffa;
+    /*background-color: #fefffa;*/
     /*max-width: 700px;*/
     padding: 30px;
   }
@@ -641,7 +686,7 @@ footer .social a:hover {
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
-    background-color: #fefffa;
+    /*background-color: #fefffa;*/
     margin: 0;
     cursor: pointer;
   }
