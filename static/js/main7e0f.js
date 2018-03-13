@@ -19,6 +19,7 @@
         $(options.lineDiv).css('height', options.lineheight + 'px');
         $(options.lineDiv).css('margin-top', (options.lineheight / 2) + 'px');
         $(options.lineDiv).css('width', '0%');
+        // $(options.imgDiv).css('width', '0%');
         $(options.lineDiv).css('visibility', 'visible');
         $(options.imgDiv).css('visibility', 'visible');
         $(options.lineDiv), parent = new TimelineMax({repeat: 0, yoyo: false, repeatDelay: 0});

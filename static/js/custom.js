@@ -18,11 +18,11 @@ initScrollAnimation();
     //Background images-
 
     var images_bg = [
-        'static/img/pic-1.jpg',
-        'static/img/pic-2.jpg',
+        'static/img/bg1.png',
+        'static/img/bg2.png',
         // 'static/img/pic-3.jpg',
-        'static/img/pic-4.jpg',
-        'static/img/pic-5.jpg',
+        'static/img/bg3.png',
+        'static/img/bg4.png',
         // 'static/img/image-placeholder.jpg'
 
     ]
