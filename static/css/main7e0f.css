@@ -10263,11 +10263,11 @@ footer:after, .footer:after {
     left: 0px;
     visibility: visible;
     z-index: 1;
-    background: #333333
+    background: #000
 }
 
 .intro-wrapper .intro-line {
-    position: fixed;
+    /*position: fixed;*/
     top: 50%
 }
 

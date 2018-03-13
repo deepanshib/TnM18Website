@@ -5,10 +5,11 @@
             speedwidth: 2,
             speedheight: 1,
             speedopacity: 1,
-            bg: '#333',
+            bg: '#fff',
             lineheight: 2,
             wrapperDiv: '.intro-wrapper',
-            lineDiv: '.intro-line'
+            lineDiv: '.intro-line',
+            imgDiv: '.intro-line img'
         };
         var options = $.extend(defaults, options);
         $('body').css('overflow-y', 'hidden');
@@ -19,18 +20,21 @@
         $(options.lineDiv).css('margin-top', (options.lineheight / 2) + 'px');
         $(options.lineDiv).css('width', '0%');
         $(options.lineDiv).css('visibility', 'visible');
+        $(options.imgDiv).css('visibility', 'visible');
         $(options.lineDiv), parent = new TimelineMax({repeat: 0, yoyo: false, repeatDelay: 0});
         parent.to(options.lineDiv, options.speedwidth, {
             css: {width: '+=100%'},
             delay: 0,
             ease: Power4.easeIn
         }, 0).timeScale(1);
+
         parent.to(options.lineDiv, options.speedheight, {
             css: {height: '+=100%', top: '-=50%'},
             delay: options.speedwidth,
             ease: Power4.easeOut,
             onComplete: step
         }, 0).timeScale(1);
+
 
         function step() {
             $('body').attr('style', '');
@@ -50,6 +54,8 @@
         }
     };
 })(jQuery);
+
+
 var DAnimation = {
     start: 0, bezier: function (p0, p1, p2, p3) {
         return DAnimation.polyBez([p0, p1], [p2, p3]);
@@ -666,3 +672,4 @@ socialShare.init('social-2');
 socialShare.init('social-3');
 socialShare.init('social-4');
 socialShare.init('social-5');
+
